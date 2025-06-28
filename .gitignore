@@ -30,7 +30,7 @@ pids
 coverage
 
 # Build output
-dist
+.dist
 build
 
 # OS generated files

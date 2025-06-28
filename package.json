@@ -6,16 +6,17 @@
   "engines": {
     "node": "22.x"
   },
-  "scripts": {
-    "start": "node dist/server.js",
-    "dev": "ts-node-dev --respawn --transpile-only ./server.ts",
-    "build": "tsc",
-    "test": "jest --detectOpenHandles",
-    "lint": "eslint ./**/*.ts",
-    "format": "prettier --write \"./**/*.ts\"",
-    "seed": "ts-node-dev src/data/seed.ts",
-    "setup": "npm install ;  npm run dev"
-  },
+ "scripts": {
+  "start": "node dist/server.js",
+  "dev": "ts-node-dev --respawn --transpile-only server.ts",
+  "build": "tsc",
+  "test": "jest --detectOpenHandles",
+  "lint": "eslint \"**/*.ts\"",
+  "format": "prettier --write \"**/*.ts\"",
+  "seed": "ts-node-dev src/data/seed.ts",
+  "setup": "npm install ; npm run dev"
+}
+,
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",

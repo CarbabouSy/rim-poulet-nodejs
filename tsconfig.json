@@ -3,7 +3,7 @@
     "target": "es2022",
     "module": "commonjs",
     "lib": ["es2022"],
-    "outDir": "./dist",
+    "outDir": "dist",
     "rootDir": ".",
     "strict": true,
     "esModuleInterop": true,
@@ -13,7 +13,7 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*.ts"]
     }
   },
   "include": ["./**/*"],
